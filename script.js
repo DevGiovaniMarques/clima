@@ -42,13 +42,13 @@ function showInfo(json){
     document.querySelector('.ventoArea').style.transform = `rotate(${json.windAngle-90}deg)`;
 }
 
-function showWarning(msg){
-    clearInfo();
-    document.querySelector('.aviso').innerHTML = msg;
-}
 
 function clearInfo(){
     showWarning('');
     document.querySelector('.resultado').style.display = 'none';
 
 }
+function showWarning(msg){
+    document.querySelector('.aviso').innerHTML = msg;
+}
+
