@@ -47,7 +47,7 @@ function showWarning(msg){
     document.querySelector('.aviso').innerHTML = msg;
 }
 
-clearInfo(){
+function clearInfo(){
     showWarning('');
     document.querySelector('.resultado').style.display = 'none';
 
